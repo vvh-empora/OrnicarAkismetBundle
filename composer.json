@@ -1,15 +1,14 @@
 {
-    "name": "ornicar/akismet-bundle",
+    "name": "predanie/akismet-bundle",
     "description": "Akismet Integration for symfony",
     "keywords": ["package", "symfony", "akismet", "spam"],
-    "homepage": "https://github.com/ornicar/OrnicarAkismetBundle",
+    "homepage": "https://github.com/Predanie/OrnicarAkismetBundle",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Thibault Duplessis",
-            "email": "thibault.duplessis@gmail.com",
-            "homepage": "http://ornicar.github.com"
+            "name": "Igor Onachenko",
+            "email": "developer@predanie.ru"
         }
     ],
 
@@ -23,7 +22,7 @@
     },
 
     "autoload": {
-        "psr-0": { "Ornicar\\AkismetBundle": "" }
+        "psr-0": { "Predanie\\AkismetBundle": "" }
     },
-    "target-dir": "Ornicar/AkismetBundle"
+    "target-dir": "Predanie/AkismetBundle"
 }
