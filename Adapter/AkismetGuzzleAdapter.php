@@ -19,7 +19,7 @@ class AkismetGuzzleAdapter implements AkismetAdapterInterface
      */
     public function __construct($blogUrl, $apiKey)
     {
-        $this->client = new Client('http://{{ api_key }}.rest.akismet.com', array(
+        $this->client = new Client('http://{api_key}.rest.akismet.com', array(
             'api_key'  => $apiKey,
             'blog_url' => $blogUrl
         ));
