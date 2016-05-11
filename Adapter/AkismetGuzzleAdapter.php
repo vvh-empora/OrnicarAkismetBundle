@@ -6,6 +6,9 @@ use Guzzle\Service\Client;
 
 class AkismetGuzzleAdapter implements AkismetAdapterInterface
 {
+	
+	const DEFAULT_TIMEOUT = 2;
+	
     /**
      * @var Client Guzzle client
      */
@@ -21,7 +24,8 @@ class AkismetGuzzleAdapter implements AkismetAdapterInterface
     {
         $this->client = new Client('http://{api_key}.rest.akismet.com', array(
             'api_key'  => $apiKey,
-            'blog_url' => $blogUrl
+            'blog_url' => $blogUrl,
+            'timeout' => self::DEFAULT_TIMEOUT
         ));
     }
 
