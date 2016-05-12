@@ -94,10 +94,10 @@ class AkismetReal implements AkismetInterface
     protected function getRequestData()
     {
         return array(
-            'permalink' => $this->currentRequest->getUri(),
+//            'permalink' => $this->currentRequest->getUri(),
             'user_ip' => $this->currentRequest->getClientIp(),
-            'user_agent' => $this->currentRequest->get('HTTP_USER_AGENT'),
-            'referrer' => $this->currentRequest->get('HTTP_REFERER')
+//            'user_agent' => $this->currentRequest->get('HTTP_USER_AGENT'),
+//            'referrer' => $this->currentRequest->get('HTTP_REFERER')
         );
     }
 }
